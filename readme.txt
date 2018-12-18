@@ -1,3 +1,10 @@
+From degrid on NOAA site, includes changes made to run on macos 10.13.6 High Sierra
+ - installed tcl-tk from homebrew
+
+
+
+
+
 Welcome to the NDFD Degrib program.
 
 The main web site for this project is currently at:
