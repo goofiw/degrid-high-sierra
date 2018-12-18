@@ -24,7 +24,7 @@ includedir = ${prefix}/include
 CC= gcc
 
 #CFLAGS= $(CFLAGS) -O
-CFLAGS=-O3 -Wall -fsigned-char 
+CFLAGS=-O3 -I/usr/local/opt/tcl-tk/include -Wall -fsigned-char 
 #CFLAGS=-O -DMAX_WBITS=14 -DMAX_MEM_LEVEL=7
 #CFLAGS=-g -DDEBUG
 #CFLAGS=-O3 -Wall -Wwrite-strings -Wpointer-arith -Wconversion \

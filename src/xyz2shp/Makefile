@@ -5,7 +5,7 @@ top_srcdir = ..
 CC = gcc
 STRIP = /usr/bin/strip
 STRIP_FLAGS = -SxX
-STD_FLAGS = -O3 -Wall -fsigned-char -pedantic
+STD_FLAGS = -O3 -I/usr/local/opt/tcl-tk/include -Wall -fsigned-char -pedantic
 EXEEXT = 
 
 STD_DEF = -DSIZEOF_LONG_INT=8   

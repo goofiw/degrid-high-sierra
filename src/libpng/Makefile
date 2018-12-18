@@ -55,7 +55,7 @@ CRELEASE =
 LDRELEASE = -s
 #WARNMORE=-Wall
 WARNMORE=
-CFLAGS = -O3 -Wall -fsigned-char -I$(ZLIBINC) $(WARNMORE) $(CRELEASE) $(CDEBUG)
+CFLAGS = -O3 -I/usr/local/opt/tcl-tk/include -Wall -fsigned-char -I$(ZLIBINC) $(WARNMORE) $(CRELEASE) $(CDEBUG)
 LDFLAGS = -L. -L$(ZLIBLIB) -lpng -lz -lm $(LDRELEASE)
 
 # File extensions

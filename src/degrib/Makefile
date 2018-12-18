@@ -1,15 +1,15 @@
 SHELL = /bin/sh
 
 top_srcdir = ..
-TCL_PREFIX = /usr
-TK_PREFIX = /usr
-TCL_VERSION = 8.5
+TCL_PREFIX = /usr/local/opt/tcl-tk
+TK_PREFIX = /usr/local/opt/tcl-tk
+TCL_VERSION = 8.6
 
 CC = gcc
 STRIP = /usr/bin/strip
 STRIP_FLAGS = -SxX
-STD_FLAGS = -O3 -Wall -fsigned-char -pedantic
-DWML_FLAGS = -O3 -Wall -fsigned-char -pedantic
+STD_FLAGS = -O3 -I/usr/local/opt/tcl-tk/include -Wall -fsigned-char -pedantic
+DWML_FLAGS = -O3 -I/usr/local/opt/tcl-tk/include -Wall -fsigned-char -pedantic
 EXEEXT = 
 LD_FLAGS = 
 TCL_LDFLAGS = ${LD_FLAGS} 
@@ -49,8 +49,8 @@ STD_LIB1 = $(XML_LIB) -L../mdl_g2c -lmdl_g2c -L../emapf-c/ -lemapf \
           -L/usr/lib -lm
 STD_LIB = -L../gd -lgd $(STD_LIB1)
 
-TCL_LIB = -L/usr/bin -ltclstub8.5
-TK_LIB = -L/usr/bin -ltclstub8.5 -ltkstub8.5
+TCL_LIB = -L/usr/local/opt/tcl-tk/lib -ltcl8.6 -ltclstub8.6
+TK_LIB = -L/usr/local/opt/tcl-tk/lib -ltk8.6 -ltkstub8.6
 TCLSTUB_LIB=-L$(TCL_PREFIX)/lib -ltclstub$(TCL_VERSION) 
 X_LIB =  -L/usr/X11/lib -lX11 -lXext
 DYNAMIC_LIB = -ldl

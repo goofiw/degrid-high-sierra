@@ -5,7 +5,7 @@ abs_top_builddir = /Users/wchantry/personal/degrib/src
 package = degrib-2.15
 
 CC = gcc
-CFLAGS = -O3 -Wall -fsigned-char
+CFLAGS = -O3 -I/usr/local/opt/tcl-tk/include -Wall -fsigned-char
 ARFLAGS = 
 EXEEXT = 
 

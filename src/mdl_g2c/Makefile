@@ -1,7 +1,7 @@
 SHELL = /bin/sh
 
 CC=gcc
-STD_FLAGS=-O3 -Wall -fsigned-char
+STD_FLAGS=-O3 -I/usr/local/opt/tcl-tk/include -Wall -fsigned-char
 STD_DEF=-DUSE_JPEG2000 -DUSE_PNG -DSIZEOF_LONG_INT=8 
 STD_INC=-I./g2clib-1.6.0 -I../jpeg2000/src/libjasper/include -I../libpng -I../zlib -I../libaat
 CFLAGS=$(STD_FLAGS) $(STD_DEF) $(STD_INC)

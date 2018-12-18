@@ -3,7 +3,7 @@ SHELL = /bin/sh
 top_srcdir = ..
 
 CC = gcc
-CFLAGS = -O3 -Wall -fsigned-char -DSIZEOF_LONG_INT=8    
+CFLAGS = -O3 -I/usr/local/opt/tcl-tk/include -Wall -fsigned-char -DSIZEOF_LONG_INT=8    
 AR = ar
 ARFLAGS = 
 RANLIB = ranlib

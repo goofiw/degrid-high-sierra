@@ -14,7 +14,7 @@ AR = ar
 #CFLAGS=-g -DHAVE_LIBPNG -DHAVE_LIBZ -DHAVE_LIBJPEG -DHAVE_MALLOC_H -DHAVE_LIBFREETYPE -DHAVE_LIBXPM
 #CFLAGS=-g -qchars=signed -O2 -DHAVE_LIBPNG -DHAVE_LIBZ -DHAVE_LIBJPEG
 #CFLAGS=-g -qchars=signed -O2 -DHAVE_LIBPNG -DHAVE_LIBZ
-CFLAGS = -O3 -Wall -fsigned-char -DHAVE_LIBPNG -DHAVE_LIBZ -DNONDLL
+CFLAGS = -O3 -I/usr/local/opt/tcl-tk/include -Wall -fsigned-char -DHAVE_LIBPNG -DHAVE_LIBZ -DNONDLL
 
 #LIBS=-lgd  -lpng -lz -ljpeg -lfreetype -lm
 #LIBS=-lgd -lpng -lz -ljpeg -lm
