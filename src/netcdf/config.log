@@ -1,0 +1,71 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:928: checking for top-level source-directory
+configure:938: checking for m4 preprocessor
+configure:945: checking for m4
+configure:1012: checking m4 flags
+configure:1085: checking C compiler "gcc"
+configure:1094: gcc -c -O3 -Wall -fsigned-char -DNDEBUG conftest.c 1>&5
+configure:1121: checking how to make dependencies
+configure:1294: checking how to run the C preprocessor
+configure:1548: checking for Fortran .F compiler
+configure:1589: checking for Fortran preprocessor
+configure:1608: checking user-defined Fortran-90 compiler ""
+configure:1615:  -c  conftest.f90
+./configure: line 1614: -c: command not found
+configure:1740: checking for nm utility
+configure:1747: checking for nm
+configure:1814: checking nm flags
+configure:2451: checking for math library
+configure:2455: checking for tanh in -lc
+configure:2544: checking for ar utility
+configure:2551: checking for ar
+configure:2618: checking ar flags
+configure:2627: checking for nm utility
+configure:2669: checking for nm
+configure:2701: checking nm flags
+configure:2711: checking for ranlib
+configure:2740: checking for stdlib.h
+configure:2777: checking for sys/types.h
+configure:2813: checking for strerror
+configure:2866: checking for working ftruncate()
+configure:2919: gcc -o conftest -O3 -Wall -fsigned-char -DNDEBUG  conftest.c  1>&5
+configure:2877:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+configure:2879:18: warning: 'tmpnam' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of tmpnam(3), it is highly recommended that you use mkstemp(3) instead. [-Wdeprecated-declarations]
+    char*       path = tmpnam(NULL);
+                       ^
+/usr/include/stdio.h:186:1: note: 'tmpnam' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of tmpnam(3), it is highly recommended that you use mkstemp(3) instead.")
+^
+/usr/include/sys/cdefs.h:180:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((deprecated(_msg)))
+                                                      ^
+2 warnings generated.
+configure:2941: checking for working alloca.h
+configure:2974: checking for alloca
+configure:3173: checking for st_blksize in struct stat
+configure:3208: checking for IEEE floating point format
+configure:3246: gcc -o conftest -O3 -Wall -fsigned-char -DNDEBUG  conftest.c  1>&5
+configure:3267: checking for ANSI C header files
+configure:3371: checking for size_t
+configure:3404: checking for off_t
+configure:3437: checking for ssize_t
+configure:3470: checking for ptrdiff_t
+configure:3503: checking for uchar
+configure:3536: checking whether char is unsigned
+configure:3599: checking whether byte ordering is bigendian
+configure:3689: checking size of short
+configure:3728: checking size of int
+configure:3767: checking size of long
+configure:3806: checking size of float
+configure:3845: checking size of double
+configure:3884: checking size of off_t
+configure:3927: checking size of size_t
+configure:4009: checking for catman
+configure:4009: checking for makewhatis
+configure:4009: checking for /usr/lib/makewhatis
+configure:4051: checking for manual-page index command
+configure:4055: checking binary distribution directory
